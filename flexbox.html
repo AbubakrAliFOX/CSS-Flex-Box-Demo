@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            width: 90%;
+            height: 400px;
+            background-color: #606c38;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        section div:nth-of-type(1) {
+            background-color: #219ebc;
+        }
+
+        section div:nth-of-type(2) {
+            background-color: #8338ec;
+        }
+
+        section div:nth-of-type(3) {
+            background-color: #fb8500;
+            align-self: center;
+        }
+
+        section div:nth-of-type(4) {
+            background-color: #3a5a40;
+        }
+
+        section div:nth-of-type(5) {
+            background-color: #cdb4db;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
